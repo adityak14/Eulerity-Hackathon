@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Pet } from '../context/PetContext';
 
 const Card = styled.div`
-  border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
   width: 400px;
@@ -13,6 +12,7 @@ const Card = styled.div`
   background-color: white;
   border-radius: 12px;
   position: relative;
+  border: 1px solid black
 `;
 
 const Image = styled.img`
@@ -20,6 +20,8 @@ const Image = styled.img`
   height: 350px;
   width: 300px;
   object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid black
 `;
 
 const DateTimeContainer = styled.div`
