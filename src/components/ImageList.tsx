@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import ImageCard from './ImageCard';
 import { usePetContext } from '../context/PetContext';
 
+// Styling for the Image List.
 const List = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
+// Component for displaying a list of image cards.
 const ImageList: React.FC = () => {
   const { state, dispatch } = usePetContext();
 

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Pet } from '../context/PetContext';
 
+// Styling for the Card and image.
 const Card = styled.div`
   padding: 16px;
   margin: 16px;
@@ -55,6 +56,7 @@ const TickMark = styled.div`
   visibility: ${props => (props.selected ? 'visible' : 'hidden')};
 `;
 
+// Type definition for the component props.
 type Props = {
   pet: Pet;
   selected: boolean;
@@ -62,6 +64,7 @@ type Props = {
   onDeselect: (id: number) => void;
 };
 
+// Component to display a pet card with title, description and date/time.
 const ImageCard: React.FC<Props> = ({ pet, selected, onSelect, onDeselect }) => {
   const date = new Date(pet.created);
 

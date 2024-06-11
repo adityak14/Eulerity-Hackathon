@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { usePetContext } from '../context/PetContext';
 
+// Styling for the SearchBar.
 const SearchContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -18,6 +19,7 @@ const Input = styled.input`
   font-size: 18px
 `;
 
+// Search Bar component.
 const SearchBar: React.FC = () => {
   const { dispatch } = usePetContext();
 

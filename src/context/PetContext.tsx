@@ -1,5 +1,6 @@
 import React, { createContext, useReducer, useContext, ReactNode } from 'react';
 
+// Defining the Pet type.
 type Pet = {
   id: number;
   title: string;
@@ -8,6 +9,7 @@ type Pet = {
   createdAt: string;
 };
 
+// Defining the state.
 type State = {
   pets: Pet[];
   selectedPets: number[];
@@ -15,6 +17,7 @@ type State = {
   sort: 'A-Z' | 'Z-A';
 };
 
+// Defining possible actions.
 type Action =
   | { type: 'SET_PETS'; payload: Pet[] }
   | { type: 'SELECT_PET'; payload: number }
@@ -24,6 +27,8 @@ type Action =
   | { type: 'SET_FILTER'; payload: string }
   | { type: 'SET_SORT'; payload: 'A-Z' | 'Z-A' };
 
+
+// Defining the initial state.
 const initialState: State = {
   pets: [],
   selectedPets: [],
@@ -36,6 +41,7 @@ const PetContext = createContext<{ state: State; dispatch: React.Dispatch<Action
   dispatch: () => null,
 });
 
+// Reducer function to manage state based on the different actions.
 const petReducer = (state: State, action: Action): State => {
   switch (action.type) {
     case 'SET_PETS':

@@ -7,6 +7,7 @@ import SelectButtons from '../components/SelectButtons';
 import DownloadButton from '../components/DownloadButton';
 import usePets from '../hooks/usePets';
 
+// Styling for the Home Page.
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,6 +37,7 @@ const ButtonContainer = styled.div`
   margin: 20px 0;
 `;
 
+// Home page component.
 const Home: React.FC = () => {
   usePets();
 

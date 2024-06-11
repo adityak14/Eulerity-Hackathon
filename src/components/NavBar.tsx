@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+// Styling for the Navbar.
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -31,6 +32,7 @@ const NavLink = styled(Link)`
   }
 `;
 
+// NavBar Component
 const NavBar: React.FC = () => {
   return (
     <NavBarContainer>

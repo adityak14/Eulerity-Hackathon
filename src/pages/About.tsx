@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Styling for the About Page.
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,6 +48,7 @@ const ListItem = styled.li`
   font-size: 22px
 `;
 
+// About page component.
 const About: React.FC = () => {
   return (
     <AboutContainer>

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { usePetContext } from '../context/PetContext';
 
+// A Custom hook to fetch and manage pet data.
 const usePets = () => {
   const { state, dispatch } = usePetContext();
 

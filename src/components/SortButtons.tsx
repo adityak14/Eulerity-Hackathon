@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { usePetContext } from '../context/PetContext';
 
+// Styling for the container and the buttons.
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -17,6 +18,7 @@ const Button = styled.button`
   font-weight: bold;
 `;
 
+// Component for the sort buttons.
 const SortButtons: React.FC = () => {
   const { dispatch } = usePetContext();
 
